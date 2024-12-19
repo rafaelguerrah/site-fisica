@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio para fortalecar a mente</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Curiosidades</a></li>
+            <li><a href="#">Fale Conosco</a></li>
+            <li><a href="#">Contato</a></li>
+        </nav>
+        <h1>Exercícios para Fortalecer a Mente</h1>
+
+    </header>
+
+
+
+    <main>
+        <article>
+            <section>
+                <p class="txt-inicial">Manter a mente ativa e saudável é tão importante quanto cuidar do corpo. Existem
+                    várias maneiras de exercitar a mente e melhorar funções cognitivas como memória, atenção e
+                    concentração. Aqui estão alguns exercícios eficazes:</p>
+            </section>
+            <picture>
+
+                <source media="(max-width:600px)" srcset="img/imgm.jpg">
+                <img src="img/imgG.jpg" alt="Foto PrincipaL">
+            </picture>
+
+            <h2 class="titulo-h2">1. Jogos de Palavras</h2>
+            <p class="p-texto">Jogos como sudoku, palavras cruzadas e caça-palavras são ótimos para estimular o cérebro
+                e melhorar o vocabulário e a memória.</p>
+
+            <h2 class="titulo-h2">2. Uso da Mão Não Dominante</h2>
+            <p class="p-texto">Tentar realizar tarefas diárias com a mão não dominante, como escrever ou usar
+                utensílios, ajuda a criar novas conexões neurais e aumenta a neuroplasticidade.</p>
+
+            <h2 class="titulo-h2">3. Aprendizado de Novas Habilidades</h2>
+            <p class="p-texto">Aprender algo novo, como tocar um instrumento musical, estudar uma nova língua ou fazer
+                um curso de pintura, pode desafiar o cérebro e melhorar a capacidade de aprendizado.</p>
+
+            <h2 class="titulo-h2">4. Exercícios Cognitivos</h2>
+            <p class="p-texto">Exercícios que envolvem movimentos dos dedos e mãos, como alternar a pressão e a rolagem,
+                podem ajudar a melhorar a memória e a concentração.</p>
+
+            <h2 class="titulo-h2">5. Atividades Físicas</h2>
+            <p class="p-texto">Exercícios físicos regulares, como caminhada, corrida ou ioga, não só beneficiam o corpo,
+                mas também melhoram a saúde mental e cognitiva.</p>
+
+            <h2 class="titulo-h2">6. Socialização</h2>
+            <p class="p-texto">Conversar com amigos e familiares, participar de grupos sociais e manter relacionamentos
+                saudáveis são essenciais para a saúde mental.</p>
+
+            <h2 class="titulo-h2">7. Meditação e Mindfulness</h2>
+            <p class="p-texto">Práticas de meditação e mindfulness ajudam a reduzir o estresse e melhorar a concentração
+                e a clareza mental.</p>
+
+            <h2 class="titulo-h2">8. Mudança de Rotina</h2>
+            <p class="p-texto">Alterar pequenas rotinas diárias, como tomar um caminho diferente para o trabalho ou
+                mudar a posição dos móveis em casa, pode estimular o cérebro a pensar de maneira diferente.</p>
+
+            <h2 class="titulo-h2">9. Lendo no Espelho</h2>
+            <p class="p-texto">Ler um texto no espelho é um exercício simples que pode ajudar a melhorar a concentração
+                e a atenção.</p>
+
+            <h2 class="titulo-h2">10. Contas no Papel</h2>
+            <p class="p-texto">Fazer cálculos matemáticos no papel, em vez de usar uma calculadora, ajuda a melhorar a
+                capacidade de raciocínio lógico e a memória.</p>
+
+            <div class="txt-video">
+                <h2>Exercicios Cognitivos para melhorar sua mente!</h2>
+                <p>Video do Canal <a href="https://www.youtube.com/@physiobrain" target="_blank">PhysioBRAIN no YouTube</a></p>
+
+            </div>
+
+            <div class="div-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Eb66fROx4CY?si=AQhd4QiOH7-ZRt-z"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="div-imc">
+                <h1 class="text-calculadora">Calculadora IMC</h1>
+
+                <div class="div-dentro-imc">
+                    <form id="form-id">
+                        <p>Sexo:
+                            <input type="radio" name="ganer" id="inMasculino" required> Masculino
+                            <input type="radio" name="ganer" id="inFeminino"> Feminino
+                        </p>
+                        <p>Altura(m):
+                            <input class="input-valor" type="number" name="Altura" id="inAltura" min="0" step="0.01"
+                                required>
+                        </p>
+                        <p>Peso (kg):
+                            <input class="input-valor" type="number" name="Peso" id="inPeso" required>
+                        </p>
+                        <button type="button" onclick="calcular()">Calcular IMC</button>
+                    </form>
+                    <h3></h3>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+
+        function calcular() {
+            const masculino = document.querySelector("#inMasculino").checked;
+            const altura = Number(document.querySelector("#inAltura").value);
+            const peso = Number(document.querySelector("#inPeso").value);
+            const resp = document.querySelector("h3");
+
+            if (isNaN(altura) || isNaN(peso) || altura <= 0 || peso <= 0) {
+                alert("Por favor digite algum valor Positivo...")
+                return
+            }
+
+            const imc = peso / (altura * 2);
+            resp.textContent = `Seu IMC é ${imc.toFixed(2)}`;
+
+            if (imc < 18.5) {
+                resp.textContent += " (Abaixo do peso)";
+            } else if (imc >= 18.5 && imc <= 24.9) {
+                resp.textContent += " (Peso normal)";
+            } else if (imc >= 25 && imc <= 29.9) {
+                resp.textContent += " (Sobrepeso)";
+            } else {
+                resup.textContent += " (Obesidade)";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
