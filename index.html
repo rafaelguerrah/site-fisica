@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio para fortalecar a mente</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
@@ -118,34 +118,7 @@
         </div>
     </footer>
 
-    <script>
-
-        function calcular() {
-            const masculino = document.querySelector("#inMasculino").checked;
-            const altura = Number(document.querySelector("#inAltura").value);
-            const peso = Number(document.querySelector("#inPeso").value);
-            const resp = document.querySelector("h3");
-
-            if (isNaN(altura) || isNaN(peso) || altura <= 0 || peso <= 0) {
-                alert("Por favor digite algum valor Positivo...")
-                return
-            }
-
-            const imc = peso / (altura * 2);
-            resp.textContent = `Seu IMC é ${imc.toFixed(2)}`;
-
-            if (imc < 18.5) {
-                resp.textContent += " (Abaixo do peso)";
-            } else if (imc >= 18.5 && imc <= 24.9) {
-                resp.textContent += " (Peso normal)";
-            } else if (imc >= 25 && imc <= 29.9) {
-                resp.textContent += " (Sobrepeso)";
-            } else {
-                resup.textContent += " (Obesidade)";
-            }
-
-        }
-    </script>
+    <script src="javaScript/imc.js"></script>
 
 </body>
 
