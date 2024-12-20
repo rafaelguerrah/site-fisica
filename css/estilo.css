@@ -53,12 +53,11 @@ nav {
     background-image: linear-gradient(to left, var(--cor3), var(--cor4));
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.462);
     justify-content: center;
-    flex-wrap: wrap;
+   
 }
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
     justify-content: center;
     padding: 0;
@@ -263,7 +262,8 @@ footer {
     }
 
     nav {
-        font-size: 1.2em;
+        flex-direction: column;
+        justify-content: center;
     }
 
     nav li a {
