@@ -263,8 +263,7 @@ footer {
     }
 
     nav {
-        flex-direction: column;
-        justify-content: center;
+        font-size: 1.2em;
     }
 
     nav li a {
