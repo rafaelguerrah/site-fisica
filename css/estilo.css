@@ -59,6 +59,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -68,6 +69,8 @@ nav ul {
 nav li {
     padding: 10px;
     list-style: none;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -272,11 +275,13 @@ footer {
     nav {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         
     }
 
     nav ul{
         justify-content: center;
+        width: 10px;
     }
 
     nav li{
@@ -310,6 +315,7 @@ footer {
     nav{
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     nav ul{
@@ -319,7 +325,7 @@ footer {
     
     nav li{
         padding: 5px;
-        text-align: center;
+        
     }
 
     nav li a{
