@@ -264,6 +264,7 @@ footer {
 
     nav {
         flex-direction: column;
+        justify-content: center;
     }
 
     nav li a {
