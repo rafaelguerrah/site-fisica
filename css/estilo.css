@@ -281,6 +281,7 @@ footer {
 
     nav li{
         text-align: center;
+        list-style: none;
     }
 
     nav li a {
@@ -313,6 +314,7 @@ footer {
 
     nav ul{
         justify-content: center;
+        list-style: none;
     }
     
     nav li{
