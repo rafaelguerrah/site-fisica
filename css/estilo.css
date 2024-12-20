@@ -226,7 +226,7 @@ footer{
         border-radius: 0;
     }
 
-    .div.imc{
+    .div-imc{
         width: 80%;
         padding: 10px;
     }
@@ -247,7 +247,7 @@ footer{
         font-size: 1em;
     }
 
-    .titulo.h2{
+    .titulo-h2{
         font-size: 1.5em;
     }
 }
