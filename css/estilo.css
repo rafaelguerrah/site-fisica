@@ -16,7 +16,6 @@
 
     --fonte-cabeca: 'Holidays', sans-serif;
     --fonte-padrao: 'Times New Roman', Times, serif;
-
 }
 
 * {
@@ -32,17 +31,13 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    
-   
 }
 
 header {
     width: 100%;
-    height: auto;
+    padding: 10px 0;
     background-image: linear-gradient(to left, var(--cor2), var(--cor3));
-    padding-bottom: 5px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.462);
-
 }
 
 header h1 {
@@ -55,25 +50,24 @@ header h1 {
 nav {
     display: flex;
     width: 100%;
-    height: auto;
     background-image: linear-gradient(to left, var(--cor3), var(--cor4));
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.462);
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-nav ul { 
-    display: flex; 
-    flex-wrap: wrap; 
-    padding: 0; 
-    margin: 0; 
-    list-style: none; 
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
-    list-style: none;
     padding: 10px;
+    list-style: none;
 }
 
 nav li a {
@@ -82,23 +76,23 @@ nav li a {
     color: var(--cor5);
     font-size: 1.2em;
     font-weight: 900;
+    padding: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav li a:hover {
     background-color: var(--cor2);
-    padding: 5px;
+    border-radius: 5px;
 }
 
 main {
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     background-color: var(--cor5);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.462);
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin-top: 10px;
     padding: 20px;
@@ -106,8 +100,8 @@ main {
 
 section {
     background-image: linear-gradient(to left, var(--cor2), var(--cor3));
-    border-top-left-radius: 15px;
-    box-shadow: 3px 3px 5px 5px  rgba(0, 0, 0, 0.462);
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.462);
     width: 100%;
     padding: 20px;
     margin-bottom: 20px;
@@ -116,7 +110,6 @@ section {
 .txt-inicial {
     font-family: var(--fonte-padrao);
     color: var(--cor0);
-    margin-top: 15px;
     text-align: center;
     font-size: 1.3em;
     font-weight: bold;
@@ -124,61 +117,61 @@ section {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.462);
 }
 
-
 main img {
     display: block;
-    width: 100%;
+    width: 70%;
     margin: 20px auto;
-    padding: 5px;
+    height: auto;
+    max-height: 400px;
 }
 
-.titulo-h2{
+.titulo-h2 {
     width: 100%;
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor3));
     color: var(--cor5);
     padding: 3px;
     font-size: 2em;
-    
+    text-align: center;
 }
 
-.p-texto{
-    text-indent: 5px;
+.p-texto {
+    text-indent: 20px;
     text-align: justify;
-    padding: 5px;
+    padding: 10px;
     font-family: var(--fonte-padrao);
     font-size: 1em;
 }
-main a{
+
+main a {
     text-decoration: none;
     font-family: var(--fonte-padrao);
     font-weight: bold;
     color: var(--cor3);
     padding: 2px 6px;
-    font-size: 1.2em;  
+    font-size: 1.2em;
 }
 
-main a:hover{
+main a:hover {
     text-decoration: underline;
 }
 
-.txt-video{
+.txt-video {
     text-align: center;
     margin-top: 25px;
 }
-.div-video{
+
+.div-video {
     background-color: var(--cor2);
     display: flex;
     justify-content: center;
     margin: 10px 0;
 }
 
-.div-imc{
+.div-imc {
     width: 50%;
     border-radius: 5px;
     background-image: linear-gradient(to left, var(--cor3), var(--cor4));
-    height: auto;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 0 auto 10px auto;
@@ -186,166 +179,98 @@ main a:hover{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.462);
 }
 
-
-.text-calculadora{
-    text-align: center;
-    font-family: var(--fonte-cabeca);    
-}
-
-.div-dentro-imc{
+.div-dentro-imc {
     width: 90%;
     border-radius: 5px;
     background-image: linear-gradient(to left, var(--cor4), var(--cor5));
-    height: auto;
-    margin: auto;
     padding: 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.462);
 }
 
-
-
-label{
-   margin: 10px;
-   font-family: var(--fonte-padrao);
-   font-size: 1em;
-
+.text-calculadora {
+    text-align: center;
+    font-family: var(--fonte-cabeca);
 }
 
-.input-valor{
+label {
+    margin: 10px;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+}
+
+.input-valor {
     width: 100%;
     border: none;
     padding: 10px;
     margin-bottom: 10px;
     font-size: 1em;
-   
 }
 
-button{
+button {
     background-color: var(--cor4);
     color: var(--cor1);
     font-family: var(--fonte-cabeca);
     border-radius: 5px;
-    display: block;
-    margin: auto;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: auto;
 }
 
-footer{
+button:hover {
+    background-color: var(--cor2);
+}
+
+footer {
     background-color: var(--cor4);
-    color:  var(--cor5);
+    color: var(--cor5);
     padding: 30px 0;
     width: 100%;
     text-align: center;
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
-@media (max-width: 768px){
-    main{
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-        padding: 10px;
-    }
-
-    .div-imc{
-        width: 80%;
-        padding: 10px;
-    }
-
-    header h1{
-        font-size: 2em;
-    }
-
-    nav li a{
-        font-size: 1em;
-    }
-
-    .txt-inicial{
-        font-size: 1.2em;
-    }
-
-    .p-texto{
-        font-size: 1em;
-    }
-
-    .titulo-h2{
-        font-size: 1.5em;
-    }
-}
-
-@media (max-width:480px){
-    .div-imc{
-        width: 100%;
-        padding: 10px;
-    }
-
-    header h1{
-        font-size: 1.5em;
-    }
-
-    nav{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav li{
-        padding: 10px;
-    }
-
-    nav li a{
-        font-size: 0.9em;
-    }
-    
-    .txt-inicial{
-        font-size: 1em;
-    }
-
-    .p-texto{
-        font-size: 0.9em;
-    }
-
-    .titulo-h2{
-        font-size: 1.2em;
-    }
-
-buton{
-    font-size: 1em;
-    width: 100%;
-}
-}
-
-@media (max-width: 360px) {
-    header h1 {
-        font-size: 1.2em; 
-    }
-
-    nav li {
-        padding: 5px; 
-    }
-
-    nav li a {
-        font-size: 0.8em; 
-    }
-
-    .txt-inicial {
-        font-size: 0.9em; 
-    }
-
-    .p-texto {
-        font-size: 0.8em; 
-    }
-
-    .titulo-h2 {
-        font-size: 1em; 
+@media (max-width: 768px) {
+    main {
+        width: 90%;
     }
 
     .div-imc {
-        padding: 10px;
+        width: 80%;
     }
 
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav li a {
+        font-size: 1em;
+    }
+
+    .titulo-h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .div-imc {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav li a {
+        font-size: 0.9em;
+    }
+
+    .titulo-h2 {
+        font-size: 1.2em;
+    }
 }
