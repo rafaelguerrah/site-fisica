@@ -267,7 +267,7 @@ footer {
     .p-texto{
         padding: 5px;
         font-size: 0.9em;
-        text-align: left;
+        text-align: justify;
     }
 }
 
@@ -307,7 +307,7 @@ footer {
     .p-texto{
         padding: 5px;
         font-size: 0.8em;
-        text-align: left;
+        text-align: justify;
     }
 }
 
@@ -360,7 +360,7 @@ footer {
     .p-texto{
         padding: 5px;
         font-size: 0.7em;
-        text-align: left;
+        text-align: justify;
     }
 }
 
