@@ -92,7 +92,7 @@ nav li a:hover {
 
 main {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     background-color: var(--cor5);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.462);
     border-top-left-radius: 15px;
@@ -143,9 +143,9 @@ main img {
     text-indent: 20px;
     text-align: justify;
     padding: 10px;
+    margin: 0;
     font-family: var(--fonte-padrao);
     font-size: 1em;
-    margin-bottom: 10px;
 }
 
 main a {
@@ -240,6 +240,7 @@ footer {
 @media (max-width: 768px) {
     main {
         width: 90%;
+        padding: 10px;
     }
 
     .div-imc {
@@ -262,6 +263,12 @@ footer {
     .titulo-h2 {
         font-size: 1.5em;
     }
+
+    .p-texto{
+        padding: 5px;
+        font-size: 0.9em;
+        text-align: left;
+    }
 }
 
 @media (max-width: 480px) {
@@ -275,9 +282,7 @@ footer {
 
     nav {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+        justify-content: center;    
     }
 
     nav ul{
@@ -298,7 +303,14 @@ footer {
     .titulo-h2 {
         font-size: 1.2em;
     }
+
+    .p-texto{
+        padding: 5px;
+        font-size: 0.8em;
+        text-align: left;
+    }
 }
+
 
 @media(max-width: 360px){
     main{
@@ -316,7 +328,6 @@ footer {
     nav{
         flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
     nav ul{
@@ -326,6 +337,7 @@ footer {
     
     nav li{
         padding: 5px;
+        text-align: center;
         
     }
 
@@ -344,5 +356,12 @@ footer {
     .titulo-h2{
         font-size: 1em;
     }
+
+    .p-texto{
+        padding: 5px;
+        font-size: 0.7em;
+        text-align: left;
+    }
 }
+
 
